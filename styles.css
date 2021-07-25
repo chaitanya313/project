@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+body{
+    background-color: #e9ecef;
+}
+.page{
+    display: grid;
+    grid-template-columns: 7vw 93vw;
+}
+.page .sidenav{
+    height: 100vh;
+    float: left;
+    background-color:white;
+    box-shadow: 3px 3px 21px 5px rgb(204, 204, 183);
+    z-index: 5;
+}
+.page .sidenav .logo{
+    width: 100%;
+    height: 10vh;
+    box-shadow: 1px 0px 5px rgb(204, 204, 183);
+}
+.page .sidenav .logo img{
+    width: 100%;
+    height: 100%;
+}
+.page .sidenav ul{
+    list-style-type: none;
+}
+.page .sidenav ul li{
+    padding-top: 2vh;
+    height: 8vh;
+    color: rgb(140, 181, 194);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.page .sidenav ul li i{
+    padding-bottom: 5px;
+}
+.page .sidenav ul .active{
+    background-color:#cae1f3 ;
+    color:#3f3f3f;
+    border-left: 6px solid rgb(25, 25, 219);
+}
+.page .sidenav ul li p{
+    font-size: 15px;
+    font-weight: 800;
+}
+.page .main{
+    height: 100vh;
+    float: right;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+}
+.page .main .top{
+    height: 10vh;
+    
+    background-color: white;
+}
+.page .main .contents{
+    padding: 50px;
+    
+}
+.page .main .contents .header p{
+    color: #6f8ca3;
+    font-weight: 700;
+}
+
+.page .main .contents .data {
+    margin : 2% 15%
+}
+.page .main .contents .data .input{
+    font-size: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 5%;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+.page .main .contents .data .upload-section{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-column-gap: 30% ;
+    font-size: 16px;
+    font-weight: 800;
+}
+.page .main .contents .data .upload-section .text{
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+    
+    text-align: center;
+}
+.page .main .contents .data .upload-section .text p{
+
+}
